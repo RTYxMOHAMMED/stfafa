@@ -1,9 +1,37 @@
+import os
+
+packages = [
+    "requests",
+    "beautifulsoup4",
+    "kivymd",
+    "faker",
+    "urllib3",
+    "instaloader",
+    "mechanize",
+    "names",
+    "pyTelegramBotAPI",
+    "user_agent",
+    "InstagramAPI",
+    "argparse",
+    "bs4",
+    "pafy",
+    "colorama",
+    "rich",
+    "youtube_dl",
+    "pyfiglet",
+    "python-telegram-bot",
+    "telethon"
+]
+
+for pkg in packages:
+    os.system(f"pip install {pkg}")
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 import subprocess
 import sqlite3
 import asyncio
-import os
+
 
 # الإعدادات
 BOT_TOKEN = "8295167666:AAGgCn4TsE-3U3QgE22Om_VCpqlJVzTnzmg"
